@@ -1,8 +1,68 @@
 <header class="site-header">
-  <div class="grid-container">
-    <div class="site-header__inner">
+  <div class="site-header__top">
+    <div class="grid-container">
+      <nav class="site-header__navigation">
+        <ul>
+          <li>
+            <a class="active" href="#">Wholesale</a>
+          </li>
+          <li>
+            <a href="#">Recipes</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-      @@include('./hamburger.html')
+  <div class="site-header__main">
+    <div class="grid-container">
+      <div class="site-header__inner">
+        <div class="site-header__brand" role="banner">
+          <a href="/">
+            <img src="./img/logo.svg" alt="Logo" />
+          </a>
+
+          <img class="site-header__brand-flag" src="./img/flag.svg" alt="Germany" />
+        </div>
+
+        <nav class="site-header__navigation">
+          <ul>
+            <li>
+              <a href="#">belgian pearl sugar</a>
+            </li>
+            <li>
+              <a href="#">liege waffle mix</a>
+            </li>
+            <li>
+              <a href="#">liege waffle maker</a>
+            </li>
+            <li>
+              <a href="#">speciality ingredients</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-header__services">
+          <div class="site-header__search">
+            <form action="">
+              <input type="text" placeholder="Search" name="search" />
+              <button type="submit"></button>
+            </form>
+          </div>
+
+          <a href="#" class="site-header__cart"> </a>
+
+          <a href="#" class="site-header__login">Sign In</a>
+        </div>
+
+        @@include('./hamburger.html')
+      </div>
     </div>
   </div>
 </header>

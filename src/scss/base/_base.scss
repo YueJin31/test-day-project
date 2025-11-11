@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Risque&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+
 html {
   scroll-behavior: smooth;
 }
@@ -5,9 +7,14 @@ html {
 body {
   font-family: var(--font-main);
   text-wrap: balance;
+  color: var(--grey);
   overflow-x: hidden;
 }
 
 img {
   display: block;
+}
+
+a {
+  color: var(--grey);
 }
