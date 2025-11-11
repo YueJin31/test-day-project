@@ -1,0 +1,1 @@
+!function(){"use strict";(()=>{const e=document.querySelector(".hamburger"),t=document.querySelector(".offcanvas");e&&t&&e.addEventListener("click",(()=>{const c=e.classList.toggle("is-active");t.classList.toggle("show",c)}))})()}();

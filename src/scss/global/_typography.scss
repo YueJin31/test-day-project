@@ -1,0 +1,24 @@
+h1 {
+  font-size: rem(52);
+  font-weight: 700;
+
+  @include media-mn(1280) {
+    font-size: rem(96);
+  }
+}
+
+h2 {
+  font-size: rem(32);
+
+  @include media-mn(1280) {
+    font-size: rem(40);
+  }
+}
+
+h3 {
+  font-size: rem(16);
+
+  @include media-mn(1280) {
+    font-size: rem(20);
+  }
+}

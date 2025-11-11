@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  text-wrap: balance;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
