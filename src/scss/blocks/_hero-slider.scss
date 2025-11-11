@@ -97,11 +97,12 @@
         margin-top: rem(25);
         pointer-events: none;
 
-        @include media-mn(1023) {
+        @include media-mn(1400) {
           margin: 0;
           position: absolute;
           right: 0;
           height: 100%;
+          max-width: 50%;
           top: rem(64);
         }
       }
