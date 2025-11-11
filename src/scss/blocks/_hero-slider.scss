@@ -1,0 +1,110 @@
+.hero-slider {
+  position: relative;
+
+  @include media-mx(1023) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image-slider {
+    @include media-mn(1023) {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .splide__slide {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-height: rem(612);
+        border-top-right-radius: rem(20);
+        border-bottom-right-radius: rem(20);
+
+        @include media-mn(1023) {
+          border-bottom-right-radius: rem(85);
+        }
+      }
+    }
+  }
+
+  &__content-slider {
+    background: #f5f5f5;
+    border-bottom-left-radius: rem(20);
+
+    @include media-mn(1023) {
+      width: 57%;
+      margin-left: auto;
+    }
+
+    .splide__pagination {
+      position: absolute;
+      display: flex;
+      gap: rem(11);
+      bottom: rem(-30);
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media-mn(1023) {
+        left: 20%;
+        bottom: rem(64);
+        transform: none;
+      }
+
+      &__page {
+        width: rem(11);
+        height: rem(11);
+        border-radius: 100%;
+        border: rem(1) solid var(--yellow);
+        transition: background 0.3s ease;
+
+        &.is-active,
+        &:hover {
+          background: var(--yellow);
+        }
+      }
+    }
+
+    .splide__slide {
+      padding: rem(25);
+      position: relative;
+
+      @include media-mn(1023) {
+        padding: rem(64) 0 rem(64) 20%;
+        min-height: rem(720);
+      }
+
+      .content {
+        max-width: rem(440);
+        width: 100%;
+
+        h1 {
+          margin-bottom: rem(15);
+        }
+
+        p {
+          font-size: rem(18);
+        }
+
+        a {
+          margin-top: rem(33);
+        }
+      }
+
+      .image {
+        margin-top: rem(25);
+        pointer-events: none;
+
+        @include media-mn(1023) {
+          margin: 0;
+          position: absolute;
+          right: 0;
+          height: 100%;
+          top: rem(64);
+        }
+      }
+    }
+  }
+}

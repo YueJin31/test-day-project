@@ -1,2 +1,11 @@
 .section {
+  &:first-of-type {
+    @include media-mx(767) {
+      margin-top: rem(50);
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: rem(47);
+  }
 }

@@ -74,13 +74,17 @@
     padding: rem(16) 0;
 
     @include media-mn(767) {
-      min-width: rem(32) 0;
+      padding: rem(32) 0;
     }
 
     ul {
       display: flex;
       align-items: center;
       gap: rem(20);
+
+      @include media-mn(1400) {
+        gap: rem(43);
+      }
 
       a {
         padding-bottom: rem(5);
@@ -100,10 +104,6 @@
           transform: translateY(-100%);
           opacity: 0;
         }
-      }
-
-      @include media-mn(1400) {
-        min-width: rem(43);
       }
     }
   }

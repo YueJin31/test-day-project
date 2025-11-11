@@ -44,7 +44,7 @@
     "last 5 versions"
   ],
   "dependencies": {
-    "avif-webp-checker": "^1.0.0",
-    "fullpage.js": "^4.0.35"
+    "@splidejs/splide": "^4.1.4",
+    "avif-webp-checker": "^1.0.0"
   }
 }
